@@ -17,6 +17,8 @@ from scipy.linalg import svd
 
 Define the image and real-world coordinates of the calibration points as NumPy arrays. A minimum of six points are needed for camera calibration, but in this problem, we are given eight points.
 
+<img width="725" alt="image" src="https://user-images.githubusercontent.com/113392023/233718915-482125aa-3082-4f9a-946e-f12f28489bcb.png">
+
 ## Step 3: Compute Projection Matrix
 
 Compute the projection matrix P using below AP = 0, the mathematics for which will be explained in detail in the next question.
@@ -101,3 +103,29 @@ print("Mean Reprojection Error: ", mean_reprojection_error)
 ```
 
 By following these steps, you can calibrate your camera and obtain the intrinsic and extrinsic parameters needed for image
+
+## Installation
+
+To run the code in this repository, you need to have the following packages installed:
+
+- OpenCV
+- NumPy
+- scipy
+
+You can install the required packages using pip:
+
+```
+pip install opencv-python numpy
+```
+## Usage
+
+To use this code, follow these steps:
+
+1. Clone this repository: `[https://github.com/KrishnaH96/Visual-Odometry.git](https://github.com/KrishnaH96/Camera-Calibration-without-default-function.git)`
+2. Run the Python script.
+3. The program will display Projection matrix, Intrinsic Matrix of the camera, Rotation and Translation matrix between the camera frame and the world frame along with mean reprojection error.
+
+## Contributing
+
+If you find any issues with the code or want to suggest improvements, feel free to open an issue or create a pull request in this repository. 
+
